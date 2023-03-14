@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-07T21:54:49 IST" name="Test-Suite" finished-at="2023-03-07T21:54:58 IST" duration-ms="9412">
+    <groups>
+    </groups>
+    <test started-at="2023-03-07T21:54:49 IST" name="ToolsQA" finished-at="2023-03-07T21:54:58 IST" duration-ms="9412">
+      <class name="born.Testngtesting">
+        <test-method signature="f()[pri:0, instance:born.Testngtesting@4659191b]" started-at="2023-03-07T21:54:49 IST" name="f" finished-at="2023-03-07T21:54:55 IST" duration-ms="6013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="f1()[pri:0, instance:born.Testngtesting@4659191b]" started-at="2023-03-07T21:54:55 IST" name="f1" finished-at="2023-03-07T21:54:58 IST" duration-ms="3275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+      </class> <!-- born.Testngtesting -->
+    </test> <!-- ToolsQA -->
+  </suite> <!-- Test-Suite -->
+</testng-results>
