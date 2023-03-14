@@ -23,7 +23,7 @@ public class Testngtesting {
 	        driver = new ChromeDriver();
 	        driver.get(baseUrl);
 	        SoftAssert test= new SoftAssert();
-	        String testTitle = "Tools QA";
+	        String testTitle = "Tools QA1";
 	        String originalTitle = driver.getTitle();	        
 	        
 	        test.assertEquals(originalTitle, testTitle);    
