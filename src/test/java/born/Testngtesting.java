@@ -19,7 +19,9 @@ public class Testngtesting {
 	    String baseUrl = "https://www.toolsqa.com/";
 	      
 	         
-	        System.out.println("Launching Google Chrome browserssss12344"); 
+
+	        System.out.println("Launching Google Chrome browserssss007"); 
+
 	        driver = new ChromeDriver();
 	        driver.get(baseUrl);
 	        SoftAssert test= new SoftAssert();
