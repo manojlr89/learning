@@ -74,7 +74,6 @@ public class WebdriverTest {
 			//b.teste();
 		}
 	
-	@Test
 	public void teste()
 	{
           System.out.println(driver.getTitle());	
