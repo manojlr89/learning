@@ -2,6 +2,7 @@ package born;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -16,13 +17,15 @@ public class Testngtesting {
 	@Test 
 	public void f() {
 	  
-	    String baseUrl = "https://www.toolsqa.com/";
-	      
+	    String baseUrl = "https://www.toolsqa.com/";     
 	         
 
 	        System.out.println("Launching Google Chrome browserssss007"); 
+	        ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--remote-allow-origins=*");
 
-	        driver = new ChromeDriver();
+	        driver = new ChromeDriver(options);
+	        
 	        driver.get(baseUrl);
 	        SoftAssert test= new SoftAssert();
 	        String testTitle = "Tools QA1";
@@ -32,6 +35,7 @@ public class Testngtesting {
 	        	        
 	        System.out.println("Launching Google Chrome browser12333");
 	        test.assertAll();
+	        driver.close();
   }
 	@Test 
 	public void f1() {
@@ -39,8 +43,12 @@ public class Testngtesting {
 	    String baseUrl = "https://www.toolsqa.com/";
 	      
 	         
-	        System.out.println("Launching Google Chrome browser"); 
-	        driver = new ChromeDriver();
+	        System.out.println("Launching Google Chrome browser90"); 
+	        ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--remote-allow-origins=*");
+
+	        driver = new ChromeDriver(options);
+	        
 	        driver.get(baseUrl);
 	        SoftAssert test= new SoftAssert();
 	        String testTitle = "Tools QA";
@@ -50,6 +58,7 @@ public class Testngtesting {
 	        	        
 	        System.out.println("Launching Google Chrome browser12333");
 	        test.assertAll();
+	        driver.close();
   }
 	
 
