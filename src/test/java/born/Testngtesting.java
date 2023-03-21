@@ -1,5 +1,7 @@
 package born;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -27,14 +29,15 @@ public class Testngtesting {
 	        driver = new ChromeDriver(options);
 	        
 	        driver.get(baseUrl);
-	        SoftAssert test= new SoftAssert();
-	        String testTitle = "Tools QA1";
+	        //SoftAssert test= new SoftAssert();
+	        String testTitle = "Tools QA";
 	        String originalTitle = driver.getTitle();	        
 	        
-	        test.assertEquals(originalTitle, testTitle);    
+	        //test.assertEquals(originalTitle, testTitle); 
+	        assertEquals(testTitle, originalTitle);
 	        	        
 	        System.out.println("Launching Google Chrome browser12333");
-	        test.assertAll();
+	       // test.assertAll();
 	        driver.close();
   }
 	@Test 
@@ -50,14 +53,14 @@ public class Testngtesting {
 	        driver = new ChromeDriver(options);
 	        
 	        driver.get(baseUrl);
-	        SoftAssert test= new SoftAssert();
+	        //SoftAssert test= new SoftAssert();
 	        String testTitle = "Tools QA";
 	        String originalTitle = driver.getTitle();	        
-	        
-	        test.assertEquals(originalTitle, testTitle);    
+	        assertEquals(testTitle, originalTitle);
+	       // test.assertEquals(originalTitle, testTitle);    
 	        	        
 	        System.out.println("Launching Google Chrome browser12333");
-	        test.assertAll();
+	        //test.assertAll();
 	        driver.close();
   }
 	
