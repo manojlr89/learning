@@ -54,7 +54,7 @@ public class Testngtesting {
 	        
 	        driver.get(baseUrl);
 	        //SoftAssert test= new SoftAssert();
-	        String testTitle = "Tools QA";
+	        String testTitle = "Tools QA1";
 	        String originalTitle = driver.getTitle();	        
 	        assertEquals(testTitle, originalTitle);
 	       // test.assertEquals(originalTitle, testTitle);    
