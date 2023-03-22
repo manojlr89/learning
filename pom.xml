@@ -4,7 +4,7 @@
 	<artifactId>learning-selenium</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>learning-selenium</name>
-	<description>this is learning </description>
+	<description>this is learning</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
